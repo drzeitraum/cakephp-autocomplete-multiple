@@ -1,0 +1,63 @@
+/**
+ * Auto complete multiple element
+
+ * @author Vyacheslav K. <vyach.kotlyarov@gmail.com>
+ * @link https://github.com/drzeitraum/cakephp-autocomplete-multiple
+ */
+
+.acm {
+    position: relative;
+}
+
+.acm ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.acm .ac-none {
+    position: absolute;
+    z-index: 0;
+    left: -9999px;
+}
+
+.acm .ac-list {
+    background: white;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    margin: 5px 0;
+    position: absolute;
+    text-align: left;
+    z-index: 10000;
+    width: 100%;
+}
+
+.acm .ac-list li {
+    cursor: pointer;
+    margin: 0;
+    border-bottom: 1px solid gray;
+    padding: 0 10px;
+}
+
+.acm .ac-list li:hover {
+    color: red;
+}
+
+.acm .ac-list li#ac_not_found {
+    cursor: default;
+}
+
+.acm .ac-list li#ac_not_found:hover {
+    color: black;
+}
+
+.acm [id*="_texts"] {
+    position: absolute;
+    left: 15px;
+    z-index: 999;
+    top: 45px;
+}
+
+.acm .acm-text {
+    display: block;
+}
